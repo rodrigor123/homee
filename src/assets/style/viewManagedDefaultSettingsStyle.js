@@ -1,0 +1,155 @@
+/**
+ * @providesModule ViewManagedDefaultSettingsStyle
+ */
+
+import { StyleSheet } from 'react-native';
+import { WINDOW } from 'global';
+import StyleConfig from 'StyleConfig';
+
+export default StyleSheet.create({
+    mainRow1: {
+        backgroundColor:StyleConfig.navyDark,
+        paddingVertical:StyleConfig.countPixelRatio(10),
+        paddingHorizontal: StyleConfig.getScreenPadding,
+    },
+    mainRow2:{
+        backgroundColor:StyleConfig.white,
+        paddingVertical:StyleConfig.countPixelRatio(10),
+        paddingHorizontal: StyleConfig.getScreenPadding,
+    },
+    propertyCodeLabelRow:{
+        width:StyleConfig.getWidthByColumn(),
+    },
+    propertyCodeLabelCol:{
+        alignItems:'flex-start',
+        justifyContent:'center'
+    },
+    propertyCodeLabel:{
+        color:StyleConfig.white,
+        fontFamily:StyleConfig.gothamMedium,
+        fontSize:StyleConfig.fontSizeH4
+    },
+    propertyCodeRow:{
+        width:StyleConfig.getWidthByColumn(),
+        height:StyleConfig.countPixelRatio(WINDOW.height * 0.05)
+    },
+    propertyCodeCol1:{
+        alignItems:'flex-start',
+        justifyContent:'center'
+    },
+    propertyCodeCol2:{
+        alignItems:'flex-end',
+        justifyContent:'center'
+    },
+    propertyCode:{
+        color:StyleConfig.white,
+        fontFamily:StyleConfig.gothamMedium,
+        fontSize:StyleConfig.fontSizeH2
+    },
+    sendBtn:{
+        height:StyleConfig.buttonHeight2,
+        borderRadius:StyleConfig.buttonHeight2,
+        backgroundColor:StyleConfig.white,
+        width:StyleConfig.getWidthByColumn(4),
+        borderWidth:1,
+        borderColor:"transparent"
+    },
+    sendBtnTxt:{
+        color:StyleConfig.blue,
+        lineHeight:StyleConfig.buttonHeight2,
+        textAlign:'center',
+        fontSize:StyleConfig.fontSizeH3,
+    },
+    labelRow:{
+        marginVertical:StyleConfig.countPixelRatio(10)
+    },
+    labelCol:{
+        justifyContent:'flex-end',
+        alignItems:'flex-start'
+    },
+    labelViewTxt2:{
+        width:StyleConfig.getWidthByColumn(3),
+        alignItems:'flex-start',
+        paddingLeft:StyleConfig.countPixelRatio(10)
+    },
+    titleLabelRow:{
+        marginVertical:StyleConfig.countPixelRatio(10)
+    },
+    titleLabelCol:{
+        justifyContent:'center',
+        alignItems:'flex-start',
+    },
+    titleLabel:{
+        fontSize:StyleConfig.fontSizeSubParagraph,
+        fontFamily:StyleConfig.gothamBold,
+        letterSpacing:1,
+        color:StyleConfig.navyDark
+    },
+    notToExceedRow:{
+        marginBottom:StyleConfig.countPixelRatio(10)
+    },
+    checkIconRow:{
+        width:StyleConfig.getWidthByColumn()
+    },
+    checkIconCol:{
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    checkIcon:{
+        fontSize:StyleConfig.fontSizeH2,
+        backgroundColor:'transparent',
+        color:StyleConfig.blue
+    },
+    checkLabel:{
+        fontSize:StyleConfig.fontSizeH3,
+        backgroundColor:'transparent',
+        color:StyleConfig.navyMediumDark,
+        fontFamily:StyleConfig.gothamBook
+    },
+    checkIconCol1:{
+        marginHorizontal:StyleConfig.countPixelRatio(5),
+        justifyContent:'center',
+        alignItems:'flex-end'
+    },
+    checkIconCol2:{
+        justifyContent:'center',
+        alignItems:'flex-start'
+    },
+    numberTitleLabel:{
+        fontSize:StyleConfig.fontSizeParagraph,
+        backgroundColor:'transparent',
+        color:StyleConfig.navyMediumDark,
+        fontFamily:StyleConfig.gothamBook
+    },
+    numberLabel:{
+        fontSize:StyleConfig.fontSizeH1,
+        backgroundColor:'transparent',
+        color:StyleConfig.blue,
+        fontFamily:StyleConfig.gothamBold
+    },
+    viewMoreRow:{
+        width:StyleConfig.getWidthByColumn()
+    },
+    viewMoreCol:{
+        justifyContent:'center',
+        alignItems:'flex-end',
+    },
+    viewMoreIcon:{
+        fontSize:StyleConfig.fontSizeH2,
+        color:StyleConfig.blue
+    },
+    viewMoreCol1:{
+        justifyContent:'center',
+        alignItems:'flex-end',
+    },
+    viewMoreCol2:{
+        justifyContent:'center',
+        alignItems:'flex-end',
+    },
+    viewMoreTxt:{
+        fontSize:StyleConfig.fontSizeH3,
+        fontFamily:StyleConfig.gothamBold,
+        color:StyleConfig.blue
+    }
+});
+

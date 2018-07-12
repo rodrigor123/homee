@@ -1,0 +1,20 @@
+platform :ios, '8.0'
+target ‘Homee’ do
+pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+  pod 'React', path: '../node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket'
+  ]
+pod 'RSKImageCropper'
+pod 'QBImagePickerController'
+pod 'GoogleMaps'
+end

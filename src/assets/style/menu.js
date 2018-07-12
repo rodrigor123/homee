@@ -1,0 +1,127 @@
+/**
+ * @providesModule MenuStyle
+ */
+
+import { StyleSheet } from 'react-native';
+import { WINDOW, SCREEN_PADDING, PLACEHOLDER_COLOR, deviceType } from 'global';
+import StyleConfig from 'StyleConfig';
+
+export default StyleSheet.create({
+    grid1:{
+        justifyContent:'center',
+        alignItems:'center',
+        backgroundColor:StyleConfig.navyDark,
+    },
+    grid1Row:{
+        marginLeft:-StyleConfig.getScreenPadding,
+        alignItems:'center',
+        justifyContent:'center',
+    },
+    grid1Col:{
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    profileRow:{
+        marginTop:StyleConfig.countPixelRatio(50)
+    },
+    profileCol:{
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    profile:{
+        width: StyleConfig.getWidthByColumn(2),
+        height: StyleConfig.getWidthByColumn(2),
+        borderRadius: StyleConfig.getWidthByColumn(2) / 2,
+    },
+    logoutBtnRow:{
+        marginTop:StyleConfig.countPixelRatio(30),
+        marginBottom:StyleConfig.countPixelRatio(20)
+    },
+    logoutBtnCol:{
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    logoutBtn:{
+        height:StyleConfig.buttonHeight2,
+        borderRadius:StyleConfig.buttonHeight2,
+        borderWidth:1,
+        width:StyleConfig.getWidthByColumn(2),
+        borderColor:StyleConfig.white,
+        alignItems:'center',
+    },
+    logoutBtnTxt:{
+        lineHeight:StyleConfig.buttonHeight2,
+        color:StyleConfig.white,
+        fontSize:StyleConfig.fontSizeH3,
+        backgroundColor:"transparent",
+        fontFamily:StyleConfig.gothamMedium,
+        letterSpacing:1
+    },
+    grid2:{
+        justifyContent:'center',
+        alignItems:'center',
+        backgroundColor:StyleConfig.navyMediumDark,
+    },
+    grid2Row:{
+        marginLeft:-StyleConfig.getScreenPadding,
+        alignItems:'center',
+        justifyContent:'center',
+    },
+    grid2Col:{
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    menuItemRow:{
+        marginTop:StyleConfig.countPixelRatio(25),
+        marginBottom:StyleConfig.countPixelRatio((deviceType == 'tablet') ? 0 : 15)
+    },
+    menuItemCol:{
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    menuItem:{
+        width:StyleConfig.getWidthByColumn(2),
+        color:StyleConfig.white,
+        fontFamily:StyleConfig.gothamMedium,
+        fontSize:StyleConfig.fontSizeH3,
+        letterSpacing:1
+    },
+    updateTxtRow:{
+        marginTop:StyleConfig.countPixelRatio(75)
+    },
+    updateTxtCol:{
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    updateTxt:{
+        width:StyleConfig.getWidthByColumn(2),
+        color:StyleConfig.navyLight,
+        fontFamily:StyleConfig.gothamBold,
+        fontSize:StyleConfig.fontSizeH4,
+        letterSpacing:1
+    },
+    updateBtnRow:{
+        marginTop:StyleConfig.countPixelRatio(10),
+        marginBottom:StyleConfig.countPixelRatio(50)
+    },
+    updateBtnCol:{
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    updateBtn:{
+        height:StyleConfig.buttonHeight2,
+        borderRadius:StyleConfig.buttonHeight2,
+        width:StyleConfig.getWidthByColumn(2),
+        backgroundColor:StyleConfig.navyLight,
+        alignItems:'center',
+    },
+    updateBtnTxt:{
+        lineHeight:StyleConfig.buttonHeight2,
+        color:StyleConfig.white,
+        textAlign:'center',
+        fontSize:StyleConfig.fontSizeH3,
+        backgroundColor:"transparent",
+        fontFamily:StyleConfig.gothamMedium,
+        letterSpacing:1
+    }
+});
