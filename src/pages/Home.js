@@ -25,7 +25,7 @@ class Home extends Component {
                 longitude: -82.62936,
                 latitudeDelta: 0.0922*15,
                 longitudeDelta: 0.0421*15,
-                locationAddress:'',
+                locationAddress: '',
             },
             circle:{
                 border:5,
